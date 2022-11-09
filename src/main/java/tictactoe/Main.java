@@ -1,12 +1,13 @@
 package tictactoe;
 
-import java.util.Scanner;
 
-import static tictactoe.Board.board;
+import static tictactoe.Winner.checkWinner;
 
 public class Main {
     public static void main(String[] args) {
-        Move move = new Move();
+
             Move.start();
+            String result = checkWinner();
+            System.out.println(result);
+        }
     }
-}
